@@ -16,14 +16,31 @@ export function Footer() {
             <div className="space-y-4 text-[var(--color-text-secondary)] font-sans">
               <div className="flex items-start gap-4">
                 <MapPin className="w-6 h-6 mt-1 text-[var(--color-accent-primary)] shrink-0" />
-                <p>
-                  Jl. Senopati No. 123, Kebayoran Baru<br />
-                  Jakarta Selatan 12190
-                </p>
+                <div>
+                  <p className="leading-relaxed">
+                    4GG2+639 Cilimus,<br />
+                    Kabupaten Kuningan, Jawa Barat
+                  </p>
+                  <a
+                    href="https://maps.app.goo.gl/nCHVBvPqv6a14juu9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-xs text-[var(--color-accent-primary)] hover:underline mt-2 font-medium"
+                  >
+                    Buka di Google Maps &rarr;
+                  </a>
+                </div>
               </div>
               <div className="flex items-center gap-4">
                 <Phone className="w-6 h-6 text-[var(--color-accent-primary)] shrink-0" />
-                <p>+62 812-3456-7890</p>
+                <a 
+                  href="https://wa.me/6282117964344"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[var(--color-accent-primary)] transition-colors"
+                >
+                  +62 821-1796-4344
+                </a>
               </div>
               <div className="mt-8">
                 <p className="font-semibold text-[var(--color-text-primary)]">Open Everyday</p>
@@ -55,11 +72,19 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Map (Placeholder for actual Google Maps iframe) */}
-          <div className="h-64 md:h-full w-full bg-[var(--color-bg-main)] rounded-2xl overflow-hidden border border-[var(--color-border-subtle)] relative">
-             <div className="absolute inset-0 flex items-center justify-center text-[var(--color-text-secondary)] bg-[var(--color-glass-bg)]">
-                [Google Maps Embed]
-             </div>
+          {/* Map Embed */}
+          <div className="h-72 md:h-auto min-h-[300px] w-full bg-[var(--color-bg-main)] rounded-2xl overflow-hidden border border-[var(--color-border-subtle)] relative shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d791.5230154953512!2d108.50033714921679!3d-6.874673655042931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1792033228803!5m2!1sid!2sid"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              title="Lokasi RFC Coffee Shop"
+              className="w-full h-full min-h-[300px]"
+            />
           </div>
         </div>
 

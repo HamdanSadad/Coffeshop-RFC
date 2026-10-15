@@ -1,11 +1,11 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type HTMLMotionProps } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { buttonHover } from "@/lib/motionConfig";
 import React from "react";
 
-interface CTAButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface CTAButtonProps extends HTMLMotionProps<"button"> {
   variant?: "primary" | "ghost";
   children: React.ReactNode;
 }

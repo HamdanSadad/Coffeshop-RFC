@@ -1,0 +1,106 @@
+{
+  "categories": [
+    {
+      "id": "hot-coffee",
+      "name": "Kopi Panas"
+    },
+    {
+      "id": "cold-coffee",
+      "name": "Kopi Dingin"
+    },
+    {
+      "id": "non-coffee",
+      "name": "Non-Kopi"
+    },
+    {
+      "id": "snacks",
+      "name": "Cemilan"
+    }
+  ],
+  "items": [
+    {
+      "id": "kapal-api",
+      "name": "Kopi Kapal Api",
+      "description": "Kopi hitam legendaris, seduhan panas yang pas dinikmati sambil menatap sawah.",
+      "price": 5000,
+      "categoryId": "hot-coffee",
+      "image": "/images/menu/kapal-api.jpg",
+      "isSignature": true
+    },
+    {
+      "id": "good-day-latte",
+      "name": "Good Day Latte",
+      "description": "Kopi susu lembut dengan rasa latte yang manis menghangatkan.",
+      "price": 6000,
+      "categoryId": "hot-coffee",
+      "image": "/images/menu/good-day-latte.jpg"
+    },
+    {
+      "id": "tora-bika-creamy",
+      "name": "Tora Bika Creamy Latte",
+      "description": "Kopi creamy yang kaya rasa, cocok untuk menemani pagi berkabut.",
+      "price": 6000,
+      "categoryId": "hot-coffee",
+      "image": "/images/menu/tora-bika-creamy.jpg"
+    },
+    {
+      "id": "good-day-freeze",
+      "name": "Good Day Freeze",
+      "description": "Es kopi susu segar yang mendinginkan dahaga di siang hari terik.",
+      "price": 7000,
+      "categoryId": "cold-coffee",
+      "image": "/images/menu/good-day-freeze.jpg",
+      "isSignature": true
+    },
+    {
+      "id": "top-gula-aren",
+      "name": "Top Coffee Gula Aren",
+      "description": "Es kopi dengan campuran gula aren khas Nusantara.",
+      "price": 7000,
+      "categoryId": "cold-coffee",
+      "image": "/images/menu/top-gula-aren.jpg"
+    },
+    {
+      "id": "white-coffee-tarik",
+      "name": "White Coffee Tarik Malaka",
+      "description": "Es kopi putih khas kopitiam dengan rasa tarik yang otentik.",
+      "price": 8000,
+      "categoryId": "cold-coffee",
+      "image": "/images/menu/white-coffee-tarik.jpg"
+    },
+    {
+      "id": "maxtea-teh-tarik",
+      "name": "MaxTea Teh Tarik",
+      "description": "Teh tarik sachet favorit dengan busa lembut dan rasa manis yang pas.",
+      "price": 7000,
+      "categoryId": "non-coffee",
+      "image": "/images/menu/maxtea-teh-tarik.jpg",
+      "isSignature": true
+    },
+    {
+      "id": "roti-bakar",
+      "name": "Roti Bakar",
+      "description": "Roti bakar hangat dengan berbagai pilihan selai (Cokelat/Keju).",
+      "price": 12000,
+      "categoryId": "snacks",
+      "image": "/images/menu/roti-bakar.jpg",
+      "isSignature": true
+    },
+    {
+      "id": "makaroni-pedas",
+      "name": "Keripik Makaroni Pedas",
+      "description": "Cemilan gurih pedas yang nagih, sangat pas sambil minum es kopi.",
+      "price": 8000,
+      "categoryId": "snacks",
+      "image": "/images/menu/makaroni-pedas.jpg"
+    },
+    {
+      "id": "wafer-nabati",
+      "name": "Wafer Nabati Keju",
+      "description": "Wafer renyah rasa keju, cemilan ringan untuk teman ngobrol.",
+      "price": 5000,
+      "categoryId": "snacks",
+      "image": "/images/menu/wafer-nabati.jpg"
+    }
+  ]
+}

@@ -1,26 +1,102 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-bg-main: #1A1514;
+  --color-bg-alt: #241A18;
+  --color-text-primary: #F4F0EA;
+  --color-text-secondary: #D4CBB8;
+  --color-accent-primary: #D4AF37;
+  --color-accent-secondary: #8C5C3A;
+  --color-border-subtle: rgba(244, 240, 234, 0.12);
+  --color-glass-bg: rgba(26, 21, 20, 0.72);
+  --color-whatsapp: #25D366;
+
+  --font-size-h1: clamp(3rem, 5vw, 4.5rem);
+  --font-size-h2: clamp(2.2rem, 4vw, 3rem);
+  --font-size-h3: clamp(1.6rem, 3vw, 2.2rem);
+  --font-size-body: 1rem;
+  --font-size-body-lg: 1.125rem;
+
+  --line-height-body: 1.6;
+  --letter-spacing-heading: -0.02em;
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.45);
+  --shadow-card: 0 16px 32px rgba(0, 0, 0, 0.65);
+  
+  --glass-blur: 18px;
+  --glass-border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@theme {
+  --color-bg-main: var(--color-bg-main);
+  --color-bg-alt: var(--color-bg-alt);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-accent-primary: var(--color-accent-primary);
+  --color-accent-secondary: var(--color-accent-secondary);
+  --color-border-subtle: var(--color-border-subtle);
+  --color-glass-bg: var(--color-glass-bg);
+  --color-whatsapp: var(--color-whatsapp);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-heading);
+
+  --text-h1: var(--font-size-h1);
+  --text-h2: var(--font-size-h2);
+  --text-h3: var(--font-size-h3);
+  --text-body: var(--font-size-body);
+  --text-body-lg: var(--font-size-body-lg);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-pill: var(--radius-pill);
+
+  --shadow-soft: var(--shadow-soft);
+  --shadow-card: var(--shadow-card);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg-main);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  line-height: var(--line-height-body);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: var(--letter-spacing-heading);
+}
+
+/* Glassmorphism utility */
+.glass {
+  background-color: var(--color-glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: var(--glass-border);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
